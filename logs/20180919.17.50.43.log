@@ -1,0 +1,6 @@
+[2018-09-19 17:50:43,437] - logger.py] - INFO: 当前运行的模块为：logger.py测试开始
+[2018-09-19 17:50:43,442] - logger.py] - INFO: 当前函数args参数列表为()
+[2018-09-19 17:50:43,447] - logger.py] - INFO: 当前函数kwargs参数列表为{}
+[2018-09-19 17:50:43,453] - logger.py] - INFO: log.info
+[2018-09-19 17:50:43,458] - logger.py] - ERROR:  --- bug appearance --- 
+[2018-09-19 17:50:43,463] - logger.py] - WARNING:  ---- warnning:test end --- 

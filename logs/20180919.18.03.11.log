@@ -1,0 +1,4 @@
+[2018-09-19 18:03:11,854] - logger.py] - INFO: 当前运行的模块为：开始读取excel接口测试数据
+[2018-09-19 18:03:11,859] - logger.py] - INFO: 当前函数args参数列表为(<__main__.ApiDefine_change object at 0x03A645D0>,)
+[2018-09-19 18:03:11,865] - logger.py] - INFO: 当前函数kwargs参数列表为{}
+[2018-09-19 18:03:11,870] - logger.py] - INFO: 读取excel测试用例数据失败，原因是：[Errno 2] No such file or directory: 'F:\\Python_project\\Ademo_unittest_logging_email_test\\dataExcel\\出口合理性分析导出接口.xlsx'

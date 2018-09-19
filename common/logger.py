@@ -86,10 +86,36 @@ class Log(object):
     def error(self,message):
         self.__console('error',message)
 
+log = Log()
+
+from functools import wraps
+def deco_logger(param):
+    def wrap(function):
+        @wraps(function)
+        def _wraps(*args,**kwargs):
+            log.info('当前运行的模块为：{}'.format(param))
+            log.info('当前函数args参数列表为{}'.format(str(args)))
+            log.info('当前函数kwargs参数列表为{}'.format(str(kwargs)))
+            return function(*args,**kwargs)
+        return _wraps
+    return wrap
+
 # test
+@deco_logger('logger.py测试开始')   # 装饰器本身带参数
+def test():
+    log.info('log.info')
+    log.error(' --- bug appearance --- ')
+    log.warning(' ---- warnning:test end --- ')
+
+if __name__ == "__main__":
+    print('测试用')
+    test()
+
+'''
 if __name__ == "__main__":
     log = Log()
     log.info(' ---- test begin --- ')
     log.info(' ---- step 1/2/3 --- ')
     log.error(' --- bug appearance --- ')
     log.warning(' ---- warnning:test end --- ')
+'''
