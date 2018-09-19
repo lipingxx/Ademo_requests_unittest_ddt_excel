@@ -2,6 +2,8 @@
 # -*- coding:utf-8 -*-
 '''
     读取excel接口数据
+    增加日志
+    增加try...except...
 '''
 import xlrd
 from Ademo_unittest_logging_email_test.common.logger import log,deco_logger
